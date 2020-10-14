@@ -1,69 +1,31 @@
-/* regra css */
-
-
-/* sempre considera o ultimo elemento */
-
-
-/* seletor univesal */
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* Calculo pela borda: por padrao ele pega o conteudo e soma os paddings para dar o tamanho da caixa . Agora ele vai de uma ponta a outra e vai diminuindo os elementos dentro da caixa */
 }
 
 body {
-    /* quero que ele ocupe  */
     height: 100vh;
-    color: white;
-    background: linear-gradient(329.54deg, #29b6d1, #00c7c7 100%) no-repeat;
-    /* plano de fundo chama a função com parametro em graus */
+    color: #ffffff;
+    background: #EBF2F5 font-size: 1em;
+    /* "em" busca do elemento pai dele
+         "rem" busca do elemento raiz "root" */
 }
 
-
-/* #
-coloca o tamanho padrao de fonte para quando utilizarmos medida rem, buscar
-no root */
-
-:root {
-    font-size: 13px;
+ :root {
+    font-size: 62.5%;
+    /* font-size: 100% é 16px. 62.5% é 10px. é o padrao do navegador. */
 }
 
 body,
 input,
 button,
 textarea {
-    /* font-weight: 400;
-    font-size: 18px;
-    line-height: 1;
-    /* se nao achar o padrao coloca sans serif */
-    /* font-family: "Nunito", sans-serif;
-    short form */
-    /* rem busca do root */
-    font: 400 1.8rem/1 'Nunito', sans-serif;
-}
-
-
-/* faixa de cima */
-
-
-/* para aparecer um de cada vez */
-
-#logo {
-    animation-delay: 50ms;
-}
-
-.location {
-    animation-delay: 100ms;
-}
-
-main h1 {
-    animation-delay: 150ms;
-}
-
-.visit p {
-    animation-delay: 200ms;
-}
-
-visit a {
-    animation-delay: 250ms;
+    /* font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1;
+      font: 400 18px/1 'Nunito', sans-serif; */
+    font: 400 1.8rem/1 "Nunito", sans-serif;
 }
