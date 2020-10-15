@@ -66,3 +66,29 @@ main h1 {
     animation-fill-mode: backwards;
     /* a faz começar onde definiu aqui */
 }
+
+
+/* animação de entrada do aside */
+
+
+/* começando pela direita */
+
+
+/* funcao interna */
+
+@keyframes right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+/* chamando a animacao right */
+
+.animatte-right {
+    animation-name: right;
+    animation-duration: 500ms;
+}

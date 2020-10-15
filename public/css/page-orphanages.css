@@ -1,30 +1,124 @@
-/* Pagina de busca */
-
-#page-orphanages {
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-
-/* parte lateral */
-
-
-/* utilizei o mesmo background do landing */
-
-aside {
-    /* retangulo aside */
-    /* largura      min    ideal    maximo */
-    width: clamp(24rem, 25vw, 44rem);
-    background: linear-gradient(329.54deg, #15b6d6, #15d6d6 100%);
-    height: 100vh;
-}
-
-header h2,
-p {
-    color: white;
-}
-
-footer strong {
-    color: white;
-}
+    /* Pagina de busca */
+    
+    #page-orphanages {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    /* parte lateral */
+    /* utilizei o mesmo background do landing */
+    
+    aside {
+        /* retangulo aside */
+        /* largura      min    ideal    maximo */
+        width: clamp(24rem, 25vw, 44rem);
+        background: linear-gradient(329.54deg, #15b6d6, #15d6d6 100%);
+        padding: clamp(3rem, 5vw, 8rem);
+        /* espaço entre a frases - escolha um ... */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* titulo */
+    /* escolha um .... */
+    
+    aside h2 {
+        /* tamanho espaco acima */
+        margin-top: 2.4rem;
+        /* tamanho  espaçamento */
+        font: 800 clamp(2rem, 5vw, 3.6rem)/1.1 'nunito', sans-serif;
+    }
+    /* Texto:  muitas criançcas estão esperando ... */
+    
+    aside p {
+        margin-top: 6.4rem;
+        font: clamp(2rem, 5vw, 3.6) 400 1.6rem/1.1 'nunito', sans-serif;
+    }
+    /* rido do sul santa catarina */
+    
+    aside footer p {
+        margin-top: .8rem;
+    }
+    /* button */
+    
+    a.create-ophanage {
+        /* posicao absoluta lateral com espaco de 4rem a partir da lateral es */
+        position: absolute;
+        right: 4rem;
+        bottom: 4rem;
+        /* posicao no eixo z */
+        /* para que o botao apareça , desloca ele no eixo z */
+        z-index: 10;
+        width: 6.4rem;
+        height: 6.4rem;
+        background: #15C3D6;
+        border: 0;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 200ms;
+    }
+    
+    a.create-ophanage:hover {
+        /* efeito mouse hover */
+        background: #17D6EB;
+    }
+    /* classe da div que está o botão  */
+    
+    #mapid {
+        width: 100%;
+        height: 100%;
+        animation-delay: 200ms;
+    }
+    
+    header h2 p {
+        color: white;
+    }
+    
+    footer strong {
+        color: white;
+    }
+    /* configuraçao estilo da nuvem de msg */
+    
+    .leaflet-popup-content-wrapper {
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 17.268px, 27.65px, 41.48px rgba (23, 142, 166, 0.16);
+        border-radius: 20px;
+    }
+    /* conteudo do icone */
+    
+    .leaflet-popup-content {
+        color: #0089A5;
+        font-weight: 600;
+        margin: .8rem 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* button */
+    
+    .leaflet-popup-content a {
+        width: 4rem;
+        height: 4rem;
+        background: #15c3d6;
+        box-shadow: 17.268px, 27.65px, 41.48px rgba (23, 142, 166, 0.16);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color .2s;
+    }
+    
+    .leaflet-popup-content a:hover {
+        background: #17D6EB;
+    }
+    
+    .leaflet-popup-tip {
+        display: none;
+    }
+    
+    .leaflet-container {
+        font: 700 2rem/1 'Nunito', sans-serif;
+        z-index: 5;
+    }
