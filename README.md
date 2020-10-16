@@ -10,4 +10,3 @@ A trilha discovery foi desenvolvida para ajudar quem está começando e ela poss
 ✨ Projeto<br>
 O projeto desenvolvido foi uma aplicação chamada Happy. O ojetivo do Happy é conectar pessoas com crianças que precisam de atenção. O Happy possui uma página web que permite cadastrar os orfanatos da sua cidade e mostrá-los no mapa. Foi utilizado HTML, CSS e Java Script nesse projeto.<br>
 <br>
-teste
