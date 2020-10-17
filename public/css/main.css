@@ -7,10 +7,10 @@
 
 body {
     height: 100vh;
-    color: #ffffff;
-    background: #EBF2F5 font-size: 1em;
+    color: white;
     /* "em" busca do elemento pai dele
          "rem" busca do elemento raiz "root" */
+    background: #EBF2F5;
 }
 
  :root {
