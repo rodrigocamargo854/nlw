@@ -1,0 +1,35 @@
+/* mapa */
+
+.map-container {
+    /* separação superior */
+    margin-top: 6.4rem;
+    background: #E6F7FB;
+    border: 1px solid #B3DAE2;
+    border-radius: 2rem;
+}
+
+#mapid {
+    /* largura do mapa */
+    width: 100%;
+    /* altura do mapa */
+    height: 28rem;
+}
+
+.map-container footer {
+    /* preenchimento interno */
+    padding: 2rem 0;
+    /* texto */
+    text-align: center;
+}
+
+.map-container footer a {
+    /* botado do mapa */
+    color: #0089a5;
+    text-decoration: none;
+}
+
+.map-container .leaflet-container {
+    /* bordas laterais do mapa */
+    border-bottom: 1px solid #DDE3F0;
+    border-radius: 2rem;
+}
